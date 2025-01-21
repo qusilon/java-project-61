@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Even {
 
-    private static final Scanner scanner = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
     private static String userName;
 
     public static void playing() {
@@ -20,7 +20,7 @@ public class Even {
             randNumber = rand.nextInt(100);
             System.out.println("Question: " + randNumber);
             System.out.print("Your answer: ");
-            answer = scanner.next();
+            answer = SCANNER.next();
 
             if ((randNumber % 2 == 0 && answer.equals("yes")) || (randNumber % 2 != 0 && answer.equals("no"))) {
                 System.out.println("Correct!");
@@ -33,14 +33,15 @@ public class Even {
             n++;
         }
 
-        if (n == 3)
+        if (n == 3) {
             System.out.println("Congratulations, " + userName + "!");
+        }
     }
 
     private static void greeting() {
         System.out.println("Welcome to the Brain Games!");
         System.out.print("May I have your name? ");
-        userName = scanner.nextLine();
+        userName = SCANNER.nextLine();
         System.out.println("Hello, " + userName + "!");
     }
 }

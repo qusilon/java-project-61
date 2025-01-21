@@ -20,7 +20,7 @@ public class App {
             case 2:
                 Even.playing();
                 break;
-            case 0:
+            default:
                 break;
         }
         scanner.close();
