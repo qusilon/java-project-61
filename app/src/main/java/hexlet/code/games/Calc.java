@@ -40,14 +40,14 @@ public class Calc {
         }
     }
 
-    private static int getResult(String sign, int NumberOne, int NumberTwo) {
+    private static int getResult(String sign, int numberOne, int numberTwo) {
         switch (sign) {
             case "+":
-                return NumberOne + NumberTwo;
+                return numberOne + numberTwo;
             case "-":
-                return NumberOne - NumberTwo;
+                return numberOne - numberTwo;
             default:
-                return NumberOne * NumberTwo;
+                return numberOne * numberTwo;
         }
     }
 }
