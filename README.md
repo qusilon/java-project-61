@@ -11,3 +11,6 @@
 
 ### [Example of victory in GCD game](https://asciinema.org/a/699640)
 ### [Example of defeat in GCD game](https://asciinema.org/a/699641)
+
+### [Example of victory in Progression game](https://asciinema.org/a/699892)
+### [Example of defeat in Progression game](https://asciinema.org/a/699893)
