@@ -6,13 +6,13 @@ public class Engine {
 
     private static final Scanner SCANNER = new Scanner(System.in);
     private static String userName;
-    private static final int NUMBEROFROUNDS = 3;
+    private static final int NUMBER_OF_ROUNDS = 3;
 
     public static void runEngine(String rulesGame, String[][] gameData) {
         greeting();
         System.out.println(rulesGame);
 
-        for (int i = 0; i < NUMBEROFROUNDS; i++) {
+        for (int i = 0; i < NUMBER_OF_ROUNDS; i++) {
             System.out.println("Question: " + gameData[i][0]);
             System.out.print("Your answer: ");
             String answer = SCANNER.next();
@@ -36,6 +36,6 @@ public class Engine {
     }
 
     public static int getNUMBEROFROUNDS() {
-        return NUMBEROFROUNDS;
+        return NUMBER_OF_ROUNDS;
     }
 }

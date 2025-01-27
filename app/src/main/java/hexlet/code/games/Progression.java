@@ -6,6 +6,11 @@ import java.util.Random;
 public class Progression {
 
     private static final String RULES = "What number is missing in the progression?";
+    private static final int MAX_STEP = 5;
+    private static final int MIN_STEP = 2;
+    private static final int MAX_START_NUMBER = 50;
+    private static final int MAX_PROGRESSION_SIZE = 10;
+    private static final int MIN_PROGRESSION_SIZE = 5;
 
     public static void playing() {
         String[][] gameData = gameDataGeneration();
@@ -29,9 +34,9 @@ public class Progression {
 
     private static String[] progressionGeneration() {
         Random rand = new Random();
-        int sizeProgression = rand.nextInt(5, 11);
-        int currentNumber = rand.nextInt(50);
-        int step = rand.nextInt(2, 5);
+        int sizeProgression = rand.nextInt(MIN_PROGRESSION_SIZE, MAX_PROGRESSION_SIZE + 1);
+        int currentNumber = rand.nextInt(MAX_START_NUMBER);
+        int step = rand.nextInt(MIN_STEP, MAX_STEP);
 
         String[] progression = new String[sizeProgression];
         progression[0] = String.valueOf(currentNumber);

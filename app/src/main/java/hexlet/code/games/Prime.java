@@ -6,6 +6,7 @@ import java.util.Random;
 public class Prime {
 
     private static final String RULES = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+    private static final int MAX_RAND_NUMBER = 100;
 
     public static void playing() {
         String[][] gameData = gameDataGeneration();
@@ -18,7 +19,7 @@ public class Prime {
         Random rand = new Random();
 
         for (int i = 0; i < numberOfRounds; i++) {
-            int randNumber = rand.nextInt(100);
+            int randNumber = rand.nextInt(MAX_RAND_NUMBER);
             gameData[i][0] = String.valueOf(randNumber);
             gameData[i][1] = isPrime(randNumber) ? "yes" : "no";
         }
