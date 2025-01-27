@@ -14,3 +14,6 @@
 
 ### [Example of victory in Progression game](https://asciinema.org/a/699892)
 ### [Example of defeat in Progression game](https://asciinema.org/a/699893)
+
+### [Example of victory in Prime game](https://asciinema.org/a/700010)
+### [Example of defeat in Prime game](https://asciinema.org/a/700011)
